@@ -18,8 +18,8 @@ body {
 }
 
 body img {
-    height: 100px; /* Reduzido para caber melhor em telas pequenas */
-    width: 100px;
+    height: 200px; /* Reduzido para caber melhor em telas pequenas */
+    width: 150px;
 }
 
 #btn {
