@@ -11,15 +11,15 @@ body {
 
 #image-container {
     display: flex;
-    align-items: center;
-    gap: 20px; /* Reduzido para mobile */
+    flex-direction: column; /* Coloca os elementos em uma coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens e o texto "VS" */
     margin-top: 20px;
-    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
 }
 
 body img {
-    height: 200px; /* Reduzido para caber melhor em telas pequenas */
-    width: 150px;
+    height: 200px; /* Ajuste para que as imagens fiquem menores */
+    max-width: 100%;
 }
 
 #btn {
@@ -29,7 +29,7 @@ body img {
 }
 
 #vs {
-    font-size: 50px; /* Reduzido para mobile */
+    font-size: 50px; /* Ajuste para que o "VS" fique bem visível */
     font-weight: bold;
     color: yellow;
     text-shadow: 2px 2px 4px black;
@@ -37,15 +37,11 @@ body img {
 
 /* Regras específicas para telas menores */
 @media (max-width: 768px) {
-    #image-container {
-        gap: 10px; /* Ainda menor no mobile */
-    }
-
     #vs {
-        font-size: 40px; /* Ajuste ainda mais para telas muito pequenas */
+        font-size: 40px; /* Ajuste para telas menores */
     }
 
     body img {
-        height: 150px; /* Imagens menores para telas muito pequenas */
+        height: 150px; /* Ajuste para imagens menores em telas pequenas */
     }
 }
